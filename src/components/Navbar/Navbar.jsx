@@ -7,22 +7,22 @@ import { CoinContext } from '../../context/CoinContext'
 function Navbar() {
   const { setCurrency } = useContext(CoinContext)
 
-  const currencyHandller = (event) => {
+  const currencyHandler = (event) => {
     switch (event.target.value) {
       case "usd": {
-        setCurrency({ name: "usd", Symbol: "U$S" });
+        setCurrency({ name: "usd", symbol: "U$S" });
         break;
       }
       case "eur": {
-        setCurrency({ name: "eur", Symbol: "€" });
+        setCurrency({ name: "eur", symbol: "€" });
         break;
       }
       case "ars": {
-        setCurrency({ name: "ars", Symbol: "$" });
+        setCurrency({ name: "ars", symbol: "$" });
         break;
       }
       default: {
-         setCurrency({ name: "usd", Symbol: "U$S" });
+         setCurrency({ name: "usd", symbol: "U$S" });
         break;
         }
     }
@@ -38,7 +38,7 @@ function Navbar() {
         <li>Blog</li>
       </ul>
       <div className="nav-right">
-        <select onChange={currencyHandller}>
+        <select onChange={currencyHandler}>
           <option value="usd">USD</option>
           <option value="eur">EUR</option>
           <option value="ars">ARS</option>

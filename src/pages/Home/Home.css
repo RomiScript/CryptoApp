@@ -1,6 +1,7 @@
 .home {
     padding: 0px 10px;
     padding-bottom: 100px;
+    
 }
 .hero {
     max-width: 600px;
@@ -16,7 +17,7 @@
 }
 .hero p {
     width: 75%;
-    color: #e3e3e3;
+    color: #ffffff;
     line-height: 1.5;
 }
 .hero form {
@@ -38,7 +39,7 @@
 }
 .hero button {
     border: none;
-    background: #7927ff;
+    background: #87527c;
     color: white;
     font-size: 16px;
     padding: 10px 30px;
@@ -48,7 +49,7 @@
 .crypto-table {
     max-width: 800px;
     margin: auto;
-    background: linear-gradient(rgba(84,3,255,0.15),rgba(105,2,153,0.15));
+    background: linear-gradient(rgba(135, 54, 233, 0.15),rgba(153, 2, 120, 0.15));
     border-radius: 15px;
 }
 .table-layout {
@@ -60,4 +61,25 @@
 }
 .market-cap {
     text-align: right;
+}
+.table-layout:last-child {
+    border: none;
+
+}
+.table-layout div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.table-layout div img {
+    width: 35px;
+}
+.table-layout .green {
+    color: #00D515;
+    text-align: center;
+}
+.table-layout .red {
+    color: #ff4646;
+    text-align: center;
 }
